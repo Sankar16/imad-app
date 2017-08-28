@@ -33,7 +33,8 @@ var htmlTemplate=
     <p>${date}<p>
     <p>${content}</p>
      </body>
-</html>;
+</html>
+;
 return htmlTemplate;
 }
 
