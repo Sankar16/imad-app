@@ -38,6 +38,72 @@ var htmlTemplate=`
 return htmlTemplate;
 }
 
+var articleTwo= {
+title: "Article Two| Sankar",
+heading: "Article Two",
+date: "August 29, 2017",
+content: '<p>This is a paragraph of the article.</p>'
+
+};
+
+function createTemplate(data){
+    var title=data.title;
+    var heading=data.heading;
+    var date=data.date;
+    var content=data.content;
+var htmlTemplate=`
+<html>
+    <headtitle>${title}</title>
+    </head>
+        <>
+    <body>
+        <div>
+            <a href="/">Home</a>
+        </div>
+    <div>
+        <h2>${heading}</h2>
+    </div>    
+    <p>${date}<p>
+    <p>${content}</p>
+     </body>
+</html>
+`;
+return htmlTemplate;
+}
+
+var articleThree= {
+title: "Article Three| Sankar",
+heading: "Article Three",
+date: "August 29, 2017",
+content: '<p>This is a paragraph of the article.</p>'
+
+}; 
+
+function createTemplate(data){
+    var title=data.title;
+    var heading=data.heading;
+    var date=data.date;
+    var content=data.content;
+var htmlTemplate=`
+<html>
+    <headtitle>${title}</title>
+    </head>
+        <>
+    <body>
+        <div>
+            <a href="/">Home</a>
+        </div>
+    <div>
+        <h2>${heading}</h2>
+    </div>    
+    <p>${date}<p>
+    <p>${content}</p>
+     </body>
+</html>
+`;
+return htmlTemplate;
+}
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -47,11 +113,11 @@ app.get('/article-one', function(req, res) {
 });
 
 app.get('/article-two', function(req, res) {
-res.send("Article two requested and will be served");
+ res.send(createTemplate(articleTwo));
 });
 
 app.get('/article-three', function(req, res) {
-res.send("Article three requested and will be served");
+ res.send(createTemplate(articleThree));
 });
 
 app.get('/ui/style.css', function (req, res) {
