@@ -22,7 +22,7 @@ var htmlTemplate=`
 <html>
     <head>
         <title>${title}</title>
-        <link href="/ui/style.css" rel="stlyesheet" />
+          <link href="/ui/style.css" rel="stlyesheet" />
     </head>
     <body>
     <div class="container">
@@ -62,6 +62,7 @@ var htmlTemplate=`
     </head>
         <>
     <body>
+    <div class="container">
         <div>
             <a href="/">Home</a>
         </div>
@@ -70,6 +71,7 @@ var htmlTemplate=`
     </div>    
     <p>${date}<p>
     <p>${content}</p>
+    </div>
      </body>
 </html>
 `;
@@ -97,6 +99,7 @@ var htmlTemplate=`
     </head>
         <>
     <body>
+    <div class="container">
         <div>
             <a href="/">Home</a>
         </div>
@@ -105,6 +108,7 @@ var htmlTemplate=`
     </div>    
     <p>${date}<p>
     <p>${content}</p>
+    </div>
      </body>
 </html>
 `;
