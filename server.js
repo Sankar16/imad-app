@@ -22,7 +22,7 @@ var htmlTemplate=`
 <html>
     <head>
         <title>${title}</title>
-          <link href="/ui/style.css" rel="stlyesheet" />
+         <style> <link href="/ui/style.css" rel="stlyesheet" /> </style>
     </head>
     <body>
     <div class="container">
